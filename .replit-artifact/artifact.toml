@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "عظمة وجلال مصر"
+version = "1.0.0"
+id = "artifacts/egypt-glory"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23180
+
+[services.development]
+run = "pnpm --filter @workspace/egypt-glory run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/egypt-glory", "run", "build" ]
+publicDir = "artifacts/egypt-glory/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23180"
+BASE_PATH = "/"
