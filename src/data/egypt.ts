@@ -161,7 +161,7 @@ export const modernProjects = [
     year: "2016",
     desc: "مدينة ذكية تُبنى من الصفر",
     image:
-      "https://www.newcapital-projects.com/wp-content/uploads/2017/10/22472812_1334188316703995_1548047467_n.jpg",
+      "https://www.propertyfinder.eg/blog/wp-content/uploads/2023/12/shutterstock_2350231743-1-1-800x565.jpg",
   },
   {
     name: "محطة الضبعة النووية",
